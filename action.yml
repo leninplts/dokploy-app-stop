@@ -1,0 +1,22 @@
+name: 'Stop App en Dokploy'
+description: 'Detiene una aplicación en Dokploy usando su API'
+author: 'Lenin Huaylla <lenin.huaylla@gmail.com>'
+
+inputs:
+  api_key:
+    description: 'Tu API key de Dokploy'
+    required: true
+  application_id:
+    description: 'ID de la aplicación en Dokploy'
+    required: true
+  dokploy_url:
+    description: 'URL base de tu instancia Dokploy (sin /api) ejemplo: https://dokploy.com'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+outputs:
+  response:
+    description: 'Respuesta de la API Dokploy'
