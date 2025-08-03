@@ -7,7 +7,7 @@ inputs:
     description: 'Tu API key de Dokploy'
     required: true
   application_id:
-    description: 'ID de la aplicación en Dokploy'
+    description: 'ID de la aplicación en Dokploy (puedes encontrarlo en la URL de la aplicación)'
     required: true
   dokploy_url:
     description: 'URL base de tu instancia Dokploy (sin /api) ejemplo: https://dokploy.com'
